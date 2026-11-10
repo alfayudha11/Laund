@@ -292,7 +292,7 @@ function Services() {
           <h2 className="ll-title">Berbagai Pilihan Perawatan</h2>
           <p className="ll-sub">Berbagai pilihan perawatan garmen untuk memenuhi segala kebutuhan wardrobe Anda.</p>
         </div>
-        <a href="#" className="ll-see-all">Lihat Semua Layanan →</a>
+        <a href="#pricing" className="ll-see-all">Lihat Semua Layanan →</a>
       </div>
       <div className="ll-svc-grid">
         {SERVICES.map((s, i) => (
@@ -375,7 +375,7 @@ function Footer() {
         <div className="ll-footer-copy">© 2024 Lather &amp; Line Garment Care<br/>Professional Wardrobe Maintenance.</div>
       </div>
       <div className="ll-footer-links">
-        {["Help Center","Privacy Policy","Terms of Service","Service Areas","Careers"].map(l => <a key={l} href="#">{l}</a>)}
+        {["Help Center","Privacy Policy","Terms of Service","Service Areas","Careers"].map(l => <a key={l} href={`#${l.toLowerCase().replace(/ /g, "-")}`}>{l}</a>)}
       </div>
       <div className="ll-footer-icons">
         <div className="ll-footer-icon">🌐</div>
